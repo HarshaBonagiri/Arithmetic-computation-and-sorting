@@ -7,4 +7,5 @@ read -p "Enter number c: " c
 
 Operation1=`expr "scale=2;$a+(($b*$c))" | bc'
 Operation2=`expr "scale=2;(($a*$b))+$c" | bc`
+Operation3=`expr "scale=2;$c+(($a/$b))" | bc`
 
