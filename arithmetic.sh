@@ -32,4 +32,14 @@ function descendingOrder () {
 }
 descendingOrder $dictionaryValuesInArray
 
+function descendingAscendingOrder () {
+	for value in $@
+	do
+		echo $value
+	done | sort -r
+}
+descendingAscendingOrder $dictionaryValuesInArray		# Descending values
+descendingAscendingOrder $dictionaryValuesInArray | sort -n	# Ascending values
+
+
 
