@@ -24,3 +24,12 @@ do
 done
 dictionaryValuesInArray=${arr[@]}
 
+function descendingOrder () {
+	for value in $@
+	do
+		echo $value
+	done | sort -r
+}
+descendingOrder $dictionaryValuesInArray
+
+
